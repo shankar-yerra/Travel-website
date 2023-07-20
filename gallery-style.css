@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: rgb(116, 150, 50);
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+nav .logo img{
+    width: 120px;
+    margin: 20px 0;
+    position: relative;
+    left: -45%;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #facc22;
+}
+
+nav ul li a.action{
+    color: #facc22;
+}
+
+nav ul li a span {
+    text-decoration: none;
+    font-size: 25px;
+    color: #1fc7e1;
+    transition: 0.3s;
+  }
+  
+  nav ul li a span:hover {
+    color: #facc22;
+  }
+  
+  nav ul li a span.action {
+    color: #facc22;
+  }
+
+  nav .login a {
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+  }
+  
+  nav .login a:hover {
+    color: #f9ab30;
+  }
+
+
+
+/*Banner*/
+
+.banner_bg{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./famous-landmarks-world-handdrawn-effect-260nw-428136982.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner_bg h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    position: relative;
+    top: 50%;
+    color: #fff;
+}
+
+.banner_bg h1 span{
+    color: #facc22;
+    margin-left: 15px;
+}
+
+
+ 
+
+/*Gallery*/
+
+.gallery{
+    width: 100%;
+    padding: 10px 0 20px 0;
+}
+
+.gallery .gallery_box{
+    width: 95%;
+    margin: 50px auto 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 12px 10px;
+}
+
+.gallery .gallery_box .gallery_image{
+    width: 470px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 55px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.gallery .gallery_box .gallery_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery .gallery_box .gallery_image img:hover{
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    background-image: url(./footer_bg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  footer .footer_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px 0;
+  }
+  
+  footer .footer_main .footer_tag {
+    margin: 0 auto;
+  }
+  
+  footer .footer_main .footer_tag h1 {
+    margin: 20px 0;
+    color: #33313b;
+  }
+  
+  footer .footer_main .footer_tag p {
+    color: white;
+    margin: 9px 0;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+  }
+  
+  footer .footer_main .footer_tag p a {
+    color: white;
+    margin: 9px 0;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+  }
+  
+  footer .footer_main .footer_tag p:hover {
+    transform: translateX(10px);
+  }
+  footer .footer_main .footer_tag p:hover a {
+    transform: translateX(10px);
+  }
+  
+  footer .footer_main .footer_tag p i {
+    margin-right: 10px;
+    color: #33313b;
+    transition: ease-in-out 0.2s;
+  }
+  
+  footer .footer_main .footer_tag p:hover i {
+    color: #f9ab30;
+    transform: scale(1.3);
+  }
+  
+  footer .footer_main .footer_tag .center {
+    text-align: center;
+  }
+  
+  footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 8px 0;
+  }
+  
+  footer .end span {
+    color: #f9ab30;
+    margin-left: 10px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #33313b;
+    border-radius: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to top, #f9ab30, #33313b);
+  }
